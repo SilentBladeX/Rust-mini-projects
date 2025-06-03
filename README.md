@@ -131,3 +131,19 @@ Validates input
 Uses a custom function to reverse the number
 Prints the reversed number
 
+---
+
+
+## Digit Counter in Rust
+
+### 📝 Description:
+This Rust program reads an integer input from the user and counts the total number of digits in that number. For example, if the input is 12345, the output will be 5.
+
+### 🛠️ How It Works:
+The program prompts the user to enter a number.
+The input is read as a string using read_line()
+The string is trimmed and parsed into a 32-bit integer (i32).
+The integer is passed to a custom function cnt_fun() that:
+Uses a loop to extract and discard each digit using % and /.
+Increments a counter on each iteration.
+Finally, the program prints the total number of digits.
