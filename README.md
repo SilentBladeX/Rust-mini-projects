@@ -67,3 +67,34 @@ Enter num to generate fibonacci series
 2
 3
 
+
+
+
+# 🎄 The Twelve Days of Christmas (Rust)
+
+This Rust program prints the lyrics of the classic Christmas carol **“The Twelve Days of Christmas”**, using a loop and array to elegantly handle repetition and structure.
+
+## ✨ Features
+
+- Uses nested loops to avoid redundant printing
+- Dynamically adds ordinal suffixes like `1st`, `2nd`, `3rd`, `4th`, etc.
+- Uses a fixed array of gifts to generate lyrics efficiently
+- Demonstrates string formatting and loop control in Rust
+
+
+## output
+
+On the 1st day of Christmas, my true love sent to me
+"A Partridge in a Pear Tree"
+
+On the 2nd day of Christmas, my true love sent to me
+"Two Turtle Doves"
+AND, "A Partridge in a Pear Tree"
+
+On the 3rd day of Christmas, my true love sent to me
+"Three French Hens"
+"Two Turtle Doves"
+AND, "A Partridge in a Pear Tree"
+
+... and so on up to 12 days
+
