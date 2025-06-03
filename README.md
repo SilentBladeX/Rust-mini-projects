@@ -117,3 +117,17 @@ This is a simple Rust program that asks the user to input an index and returns t
 - The array used is: `[10, 20, 30, 40, 50]`  
 - Only indices `0` to `4` are valid  
 - Out-of-bounds access is handled gracefully  
+
+
+---
+
+
+## 🔁 Reverse Number (Rust)
+This is a simple Rust command-line program that takes a number from the user and prints its reverse. It's a beginner-friendly project to practice input handling, loops, and basic arithmetic.
+
+### 🚀 Features
+Takes user input at runtime
+Validates input
+Uses a custom function to reverse the number
+Prints the reversed number
+
