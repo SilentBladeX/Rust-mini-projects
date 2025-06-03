@@ -42,11 +42,11 @@ Enter temperature in Celsius:
 Temperature in Fahrenheit: 212.00°F
 
 
-println!("-----");
 
 
 
-##  🚀 Fibonacci Series Generator in Rust
+
+# 🚀 Fibonacci Series Generator in Rust
 
 This is a simple Rust program that takes a number from the user and prints the Fibonacci series up to that number of terms.
 
@@ -68,10 +68,8 @@ Enter num to generate fibonacci series
 3
 
 
-println!("-----");
 
-
- ## 🎄 The Twelve Days of Christmas (Rust)
+# 🎄 The Twelve Days of Christmas (Rust)
 
 This Rust program prints the lyrics of the classic Christmas carol **“The Twelve Days of Christmas”**, using a loop and array to elegantly handle repetition and structure.
 
@@ -103,7 +101,7 @@ AND, "A Partridge in a Pear Tree"
 
 println!("-----");
 
-## 🎯 Guessing Game (Rust)
+# 🎯 Guessing Game (Rust)
 
 This is a simple command-line Guessing Game built in Rust as a beginner practice project.
 
@@ -132,7 +130,7 @@ This is a simple command-line Guessing Game built in Rust as a beginner practice
 println!("-----");
 
 
-## 🚀  Array Value by Index
+# 🚀 Array Value by Index
 
 This is a simple Rust program that asks the user to input an index and returns the value at that index from a predefined array.
 
