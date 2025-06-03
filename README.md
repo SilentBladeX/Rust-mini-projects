@@ -98,3 +98,33 @@ AND, "A Partridge in a Pear Tree"
 
 ... and so on up to 12 days
 
+
+
+
+
+# 🎯 Guessing Game (Rust)
+
+This is a simple command-line Guessing Game built in Rust as a beginner practice project.
+
+## 📋 How It Works
+
+- The computer randomly generates a number between **1 to 5**.
+- You are prompted to guess the number.
+- After each guess, the program tells you:
+  - If your number is too low
+  - If your number is too high
+  - Or if it's correct
+- The game keeps running until you guess the correct number.
+- At the end, it shows you:
+  - The secret number
+  - The number of attempts you took to guess it
+
+## 🧠 Concepts Used
+
+- `rand::thread_rng().gen_range()` for random number generation
+- `std::io` for taking user input
+- `std::cmp::Ordering` for comparison logic
+- Looping and match statements
+- Basic error handling
+
+
