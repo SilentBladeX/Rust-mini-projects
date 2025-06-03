@@ -147,3 +147,174 @@ The integer is passed to a custom function cnt_fun() that:
 Uses a loop to extract and discard each digit using % and /.
 Increments a counter on each iteration.
 Finally, the program prints the total number of digits.
+
+
+---
+
+## 📌 Sum of Digits
+
+### 📝 Description:
+This Rust program takes an integer input from the user and calculates the sum of its digits. For example, if the user enters 1234, the output will be 10 (since 1 + 2 + 3 + 4 = 10).
+
+### 🛠️ How It Works:
+The program prompts the user to enter a number.
+It reads the input as a String using read_line() and stores it in a mutable variable.
+The string input is trimmed and parsed into a 32-bit integer (i32).
+The number is passed to a custom function sum_fun() which:
+Extracts each digit using modulus %.
+Adds the digit to a running total (sum).
+Removes the last digit using integer division /.
+The function returns the final sum.
+The result is printed to the console.
+
+
+---
+
+## 📌 Prime Number Checker 
+
+### 📝 Description:
+This Rust program reads an integer input from the user and determines whether the number is prime or not prime. It uses an efficient method by checking divisibility only up to the square root of the input number.
+
+### 🛠️ How It Works:
+The program prompts the user to enter a number.
+It reads the input as a string and converts it into an integer.
+The function prime_fun checks whether the number is prime:
+If the number is less than 2, it is not prime.
+Otherwise, it checks divisibility from 2 up to the square root of the number.
+If any divisor is found, the number is declared not prime.
+Otherwise, it is declared prime.
+The program prints the result to the console.
+
+
+---
+
+## 📌 Armstrong Number Checker 
+
+### 📝 Description:
+This Rust program checks whether a user-input number is an Armstrong number. An Armstrong number is one in which the sum of each digit raised to the power of the total number of digits is equal to the original number.
+
+### 🛠️ How It Works:
+Prompts the user to enter a number.
+Reads the number from standard input as a string.
+Converts the string input to an integer.
+Calculates the number of digits.
+Separates each digit and computes the power of each digit.
+Sums up all powered digits.
+Compares the sum with the original number.
+Prints whether the number is an Armstrong number or not.
+
+
+---
+
+
+## 📌 Palindrome Number Checker 
+
+### 📝 Description:
+This Rust program checks whether a given number is a palindrome. A number is considered a palindrome if it reads the same forward and backward (e.g., 121, 1331, 12321).
+
+### 🛠️ How It Works:
+Prompts the user to enter a number.
+Reads the input from standard input as a String.
+Parses the string into an i32 integer.
+If input is invalid, it prints an error and exits.
+Reverses the number using a loop:
+Extracts digits using modulus
+Builds reversed number step by step
+Compares the reversed number to the original number.
+Prints whether the number is a palindrome.
+
+---
+
+
+## 📌 Factorial Calculator 
+
+### 📝 Description:
+This Rust program calculates the factorial of a user-input positive integer.
+The factorial of a number n is the product of all positive integers from 1 to n (denoted as n!).
+
+### 🛠️ How It Works:
+Prompts the user to enter a number.
+Reads input from standard input as a string.
+Converts the string input into an i32 integer.
+If the input is invalid (non-numeric), it prints an error and exits.
+Uses a for loop to compute the factorial.
+Prints the factorial result.
+
+
+---
+
+
+## GCD and LCM Calculator in Rust
+
+This Rust program reads an array of integers from the user and calculates:
+GCD (Greatest Common Divisor) of all the elements
+LCM (Least Common Multiple) of all the elements
+
+### Features:
+
+Accepts dynamic input for array size and elements
+Handles invalid input gracefully
+Calculates GCD using Euclidean Algorithm
+Calculates LCM using formula:
+LCM(a, b) = (a × b) / GCD(a, b)
+
+### Logic Explanation:
+
+GCD is calculated pair by pair using the Euclidean Algorithm:
+Repeatedly use:
+a % b → swap values → repeat until remainder is 0
+
+LCM is calculated using the formula:
+LCM(a, b) = (a * b) / GCD(a, b)
+This is also done pair by pair across the array.
+
+
+
+---
+
+
+
+## 📘  GCD and LCM 
+
+### 📝 Description:
+This Rust program allows a user to:
+1. Enter the size of an array.
+2. Input integer elements into the array.
+3. Calculate and print the **GCD (Greatest Common Divisor)** of all numbers in the array.
+4. Calculate and print the **LCM (Least Common Multiple)** of all numbers in the array.
+
+
+
+### 📌 Features:
+- Input validation (ensures all entries are integers).
+- Dynamically stores user input using a `Vec<i32>`.
+- Efficiently computes GCD and LCM using custom functions.
+
+
+### 🧮 Logic:
+
+### ✅ GCD Function (Brute Force Method):
+- Takes two numbers `a` and `b`.
+- Finds the smaller number using `min = if a < b { a } else { b }`.
+- Iterates from 1 to `min`.
+- Checks for the greatest number that divides both `a` and `b` without remainder.
+- Updates `gcd` whenever a common divisor is found.
+
+### ✅ LCM Function:
+- Uses the formula:  
+  **LCM(a, b) = (a × b) / GCD(a, b)**
+- This method avoids unnecessary loops and reuses the GCD logic.
+
+
+
+### 🖥️ How It Works:
+1. Program asks for array size.
+2. User enters numbers one by one.
+3. GCD is computed across all array values using a loop and the brute force method.
+4. LCM is computed using the multiplication and division formula.
+5. Both results are displayed.
+
+
+### 🛠️ Note:
+- GCD is computed using the brute-force method, which is simple and easy to understand for beginners.
+- This program handles errors gracefully using `match` for parsing integers.
