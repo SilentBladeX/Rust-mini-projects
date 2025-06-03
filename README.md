@@ -40,3 +40,30 @@ Choose an option:
 Enter temperature in Celsius:
 > 100
 Temperature in Fahrenheit: 212.00°F
+
+
+
+
+
+
+## Fibonacci Series Generator in Rust
+
+This is a simple Rust program that takes a number from the user and prints the Fibonacci series up to that number of terms.
+
+## 📋 Features
+
+- Takes input from the user at runtime
+- Validates user input
+- Generates Fibonacci series using a `while` loop
+- Clean and readable Rust code
+
+## Output
+
+Enter num to generate fibonacci series
+5
+0
+1
+1
+2
+3
+
