@@ -42,11 +42,11 @@ Enter temperature in Celsius:
 Temperature in Fahrenheit: 212.00°F
 
 
+println!("-----");
 
 
 
-
-## Fibonacci Series Generator in Rust
+##  🚀 Fibonacci Series Generator in Rust
 
 This is a simple Rust program that takes a number from the user and prints the Fibonacci series up to that number of terms.
 
@@ -68,13 +68,14 @@ Enter num to generate fibonacci series
 3
 
 
+println!("-----");
 
 
-# 🎄 The Twelve Days of Christmas (Rust)
+ ## 🎄 The Twelve Days of Christmas (Rust)
 
 This Rust program prints the lyrics of the classic Christmas carol **“The Twelve Days of Christmas”**, using a loop and array to elegantly handle repetition and structure.
 
-## ✨ Features
+# ✨ Features
 
 - Uses nested loops to avoid redundant printing
 - Dynamically adds ordinal suffixes like `1st`, `2nd`, `3rd`, `4th`, etc.
@@ -100,9 +101,9 @@ AND, "A Partridge in a Pear Tree"
 
 
 
+println!("-----");
 
-
-# 🎯 Guessing Game (Rust)
+## 🎯 Guessing Game (Rust)
 
 This is a simple command-line Guessing Game built in Rust as a beginner practice project.
 
@@ -128,3 +129,24 @@ This is a simple command-line Guessing Game built in Rust as a beginner practice
 - Basic error handling
 
 
+println!("-----");
+
+
+## 🚀  Array Value by Index
+
+This is a simple Rust program that asks the user to input an index and returns the value at that index from a predefined array.
+
+## 🔧 How It Works
+
+- The user is prompted to enter an index.
+- The input is read as a string and then parsed into an integer.
+- The index is checked to ensure it's within bounds (less than array length).
+- If the index is valid, the value at that index is printed.
+- If the index is out of bounds or input is invalid, an error message is shown.
+
+
+## 📌 Notes
+
+- The array used is: `[10, 20, 30, 40, 50]`
+- Only indices `0` to `4` are valid.
+- Out-of-bounds access is handled gracefully.
