@@ -318,3 +318,55 @@ This Rust program allows a user to:
 ### 🛠️ Note:
 - GCD is computed using the brute-force method, which is simple and easy to understand for beginners.
 - This program handles errors gracefully using `match` for parsing integers.
+
+
+
+---
+
+
+## 1. 🧮 Calculator
+
+
+### Description:
+A basic CLI calculator that takes two numbers from the user and performs addition, subtraction, multiplication, or division based on the selected operator.
+
+### How it works:
+- Prompts the user for two numbers.
+- Asks which operation to perform (`+`, `-`, `*`, `/`).
+- Prints the calculated result.
+- Handles divide-by-zero gracefully.
+
+
+
+---
+
+
+
+
+## 2. 🔢 Even or Odd Checker
+
+### Description:
+A simple program to check whether a number entered by the user is even or odd.
+
+### How it works:
+- User enters a whole number.
+- Program checks `number % 2`.
+- Displays if the number is **Even** or **Odd**.
+
+
+---
+
+
+
+## 3. 📋 Table Printer
+
+### Description:
+Prints the multiplication table (paara) of any number entered by the user.
+
+### How it works:
+- Takes one number from the user.
+- Uses a `for` loop from 1 to 10.
+- Prints the multiplication result line-by-line.
+
+
+
