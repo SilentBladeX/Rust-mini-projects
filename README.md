@@ -369,4 +369,32 @@ Prints the multiplication table (paara) of any number entered by the user.
 - Prints the multiplication result line-by-line.
 
 
+---
+
+
+## 🚗 Distance Converter in Rust
+
+This is a simple Rust CLI program that allows the user to convert distances between:
+
+- Kilometers to Miles
+- Miles to Kilometers
+
+### 🧠 How It Works
+
+1. The program asks the user to enter a choice:
+   - Enter `1` to convert **Kilometers to Miles**
+   - Enter `2` to convert **Miles to Kilometers**
+
+2. Based on the user's choice:
+   - If `1`, it prompts for a distance in kilometers and converts it to miles.
+   - If `2`, it prompts for a distance in miles and converts it to kilometers.
+   - Any other input results in an "Invalid choice" message.
+
+3. The program handles invalid number inputs gracefully using `match`.
+
+### 🧮 Conversion Formulas
+
+- **Kilometers to Miles**: `miles = km × 0.621371`
+- **Miles to Kilometers**: `km = miles × 1.60934`
+
 
