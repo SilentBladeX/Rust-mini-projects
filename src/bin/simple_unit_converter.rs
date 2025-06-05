@@ -22,15 +22,15 @@ fn main(){
     };
     
 
-    if num==1{
-    kilo_to_miles();
+
+    match num{
+        1 =>  kilo_to_miles(),
+        2 =>  miles_to_kilo(),
+        _ => {
+            println!("Invalid number");
+            return;
+        }  
     }
-    else if num==2{
-    miles_to_kilo();
-    }
-    else {
-    println!("Invalid choice. Please enter 1 or 2.");
-}
 
 }
 
