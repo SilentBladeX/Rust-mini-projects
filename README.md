@@ -436,3 +436,45 @@ The balance is stored and updated using mutable references, demonstrating basic 
 - Prevents overdrawing (i.e., withdrawing more than the balance)
 - Uses `match` statements and references properly
 
+
+---
+
+
+## Grade Calculator in Rust
+
+This Rust program calculates the total marks, average marks, and grade for a student based on marks entered for multiple subjects.
+
+### Features
+
+Takes the number of subjects as input.
+Takes marks input for each subject individually.
+Validates each mark to be between 0 and 100.
+Calculates total marks out of the maximum possible marks.
+Calculates the average marks.
+Assigns a grade based on the average marks using the following scale:
+
+A: 90 - 100
+B: 80 - 89.99
+C: 70 - 79.99
+D: 60 - 69.99
+F: below 60
+
+Handles invalid inputs gracefully and prompts user again.
+
+### How to Use
+Run the program
+Enter the number of subjects (must be a positive integer).
+Enter marks for each subject (each between 0 and 100).
+After all marks are entered, the program displays:
+The marks entered
+
+Total marks and the maximum possible marks
+Average marks (rounded to two decimals)
+Assigned grade
+
+### Notes
+
+Input validation ensures marks are within the valid range.
+The program uses a loop to keep asking for valid marks until they are entered correctly.
+The grading scale is customizable within the grade function.
+
