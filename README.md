@@ -398,3 +398,41 @@ This is a simple Rust CLI program that allows the user to convert distances betw
 - **Miles to Kilometers**: `km = miles × 1.60934`
 
 
+---
+
+
+## Mini ATM Program in Rust
+=========================
+
+### 📌 Description:
+---------------
+This is a simple command-line ATM simulation program written in Rust. It allows the user to:
+1. Check account balance
+2. Deposit money
+3. Withdraw money
+4. Exit the program
+
+The balance is stored and updated using mutable references, demonstrating basic concepts of ownership and borrowing in Rust.
+
+### 🔧 How It Works:
+----------------
+- The program starts with an initial balance of 0.0.
+- A menu is shown to the user with 4 options.
+- The user selects an option by entering a number.
+- For deposit and withdrawal, the program asks for the amount.
+- Balance is updated in memory and shown to the user.
+
+### 📋 Menu Options:
+----------------
+1 → Check current balance  
+2 → Deposit money  
+3 → Withdraw money  
+4 → Exit the program  
+
+### ✅ Features:
+------------
+- Input validation for all numeric entries
+- Handles incorrect input (e.g., alphabets or symbols)
+- Prevents overdrawing (i.e., withdrawing more than the balance)
+- Uses `match` statements and references properly
+
