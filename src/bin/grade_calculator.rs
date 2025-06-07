@@ -4,17 +4,17 @@ fn main() {
     println!("Enter number of subjects:");
 
     let mut size = String::new();
-    io::stdin().read_line(&mut size).expect("Failed to read msg");
+    io::stdin().read_line(&mut size).expect("Failed to read input");
 
-    let size: i32 = match size.trim().parse() {
-        Ok(size) if size > 0 => size,
+    let size: usize = match size.trim().parse() {
+        Ok(n) if n > 0 => n,
         _ => {
             println!("Invalid size");
             return;
         }
     };
 
-    let mut array: Vec<f64> = vec![0.0; size as usize];
+    let mut marks_list: Vec<f64> = Vec::new();
 
     for i in 0..size {
         loop {
@@ -33,16 +33,16 @@ fn main() {
             if marks < 0.0 || marks > 100.0 {
                 println!("Marks must be between 0 and 100. Try again.");
             } else {
-                array[i as usize] = marks;
+                marks_list.push(marks);
                 break;
             }
         }
     }
 
     let out_of = size as f64 * 100.0;
-    println!("You entered marks: {:?}", array);
+    println!("\nYou entered marks: {:?}", marks_list);
 
-    let total: f64 = array.iter().sum();
+    let total: f64 = marks_list.iter().sum();
     let average = total / size as f64;
 
     println!("Total Marks: {} out of {}", total, out_of);
@@ -53,7 +53,7 @@ fn main() {
 }
 
 fn grade(avg: f64) -> char {
-    if avg >= 90.0 && avg <= 100.0 {
+    if avg >= 90.0 {
         'A'
     } else if avg >= 80.0 {
         'B'
