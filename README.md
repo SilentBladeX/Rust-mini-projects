@@ -509,3 +509,34 @@ Displays appropriate messages:
 If the password is valid → ✅ success message
 
 If invalid → ❌ specific instructions on what’s missing
+
+
+---
+
+
+## 🧾 Simple Expense Tracker 
+
+This is a simple command-line based Expense Tracker written in Rust. It allows users to add, view, and calculate total expenses. It stores expenses as a vector of `(f64, String)` tuples, where each entry consists of an amount and a description.
+
+
+
+### 📋 Features
+
+- ✅ Add multiple expenses with amount and description
+- 📃 View all stored expenses with index
+- 💰 Show total amount of all expenses
+- ❌ Exit the program
+
+
+### 🛠️ Code Structure
+
+main() : Main loop for menu and user interaction
+add_expense() : Takes user input for multiple expenses
+view_expense() : Lists all added expenses
+total_expenses() : Calculates and displays the total amount spent
+
+
+ ### Notes
+ 
+All expense descriptions are stored as String for clarity and display
+Amounts are stored as f64 to allow decimal values
