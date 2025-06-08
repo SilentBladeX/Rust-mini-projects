@@ -1,8 +1,8 @@
 use std::io;
 
 fn main() {
-    // Ask the user to enter the size of the array
-    println!("Enter size of array");
+    // Ask the user to enter the size
+    println!("Enter size of numbers to take HCF and LCM");
     let mut size = String::new();
 
     io::stdin()
@@ -18,12 +18,12 @@ fn main() {
         }
     };
 
-    // Create a vector (array) with given size, initialized with 0s
-    let mut array = vec![0; size as usize];
+    // Create a vector (vec) with given size, initialized with 0s
+    let mut vec = Vec::new();
 
     // Loop to input each element into the array
-    for i in 0..size {
-        println!("Enter numbers in array");
+    for _ in 0..size {
+        println!("Enter numbers in vector");
         let mut num = String::new();
 
         io::stdin()
@@ -38,22 +38,22 @@ fn main() {
                 return;
             }
         };
-        array[i as usize] = num; // Store number in the array
+        vec.push(num); // Store number in the array
     }
 
-    // Print the array
-    println!("Your array is: {:?}", array);
+    // Print the vector
+    println!("Your entered number are: {:?}", vec);
 
     // Calculate GCD of all elements
-    let mut result = array[0];
-    for &num in array.iter().skip(1) {
+    let mut result = vec[0];
+    for &num in vec.iter().skip(1) {
         result = gcd(result, num); // Reduce GCD pair by pair
     }
     println!("GCD is: {}", result);
 
     // Calculate LCM of all elements
-    let mut result1 = array[0];
-    for &num in array.iter().skip(1) {
+    let mut result1 = vec[0];
+    for &num in vec.iter().skip(1) {
         result1 = lcm(result1, num); // Reduce LCM pair by pair
     }
     println!("LCM is: {}", result1);
