@@ -1,8 +1,8 @@
 use std::io;
 
 fn main() {
-    // Ask the user to enter the size of the array
-    println!("Enter size of array");
+    // Ask the user to enter the size of the vector
+    println!("Enter size of numbers u want to take HCF and LCM ");
     let mut size = String::new();
 
     // Read the input size as a string
@@ -20,11 +20,11 @@ fn main() {
     };
 
     // Create a vector of size 'size' with default value 0
-    let mut array = vec![0; size as usize];
+    let mut vec = Vec::new();
 
-    // Take 'size' number of inputs from the user to fill the array
+    // Take 'size' number of inputs from the user to fill the vector
     for i in 0..size {
-        println!("Enter numbers in array");
+        println!("Enter numbers in vector");
         let mut num = String::new();
 
         io::stdin()
@@ -39,23 +39,23 @@ fn main() {
                 return;
             }
         };
-        // Assign number to the correct index in the array
-        array[i as usize] = num;
+        
+        vec.push(num);
     }
 
-    // Print the full array entered by the user
-    println!("Your entered array are {:?}", array);
+    // Print the full vector entered by the user
+    println!("Your entered array are {:?}", vec);
 
-    // Find GCD of all numbers in the array
-    let mut result = array[0];
-    for &num in array.iter().skip(1) {
+    // Find GCD of all numbers in the vector
+    let mut result = vec[0];
+    for &num in vec.iter().skip(1) {
         result = gcd(result, num); // call gcd function for each pair
     }
     println!("GCD is {} ", result);
 
-    // Find LCM of all numbers in the array
-    let mut result1 = array[0];
-    for &num in array.iter().skip(1) {
+    // Find LCM of all numbers in the vector
+    let mut result1 = vec[0];
+    for &num in vec.iter().skip(1) {
         result1 = lcm(result1, num); // call lcm function for each pair
     }
     println!("LCM is {} ", result1);
