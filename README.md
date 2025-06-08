@@ -246,13 +246,13 @@ Prints the factorial result.
 
 ## GCD and LCM Calculator in Rust
 
-This Rust program reads an array of integers from the user and calculates:
+This Rust program reads an vector of integers from the user and calculates:
 GCD (Greatest Common Divisor) of all the elements
 LCM (Least Common Multiple) of all the elements
 
 ### Features:
 
-Accepts dynamic input for array size and elements
+Accepts dynamic input for vector size and elements
 Handles invalid input gracefully
 Calculates GCD using Euclidean Algorithm
 Calculates LCM using formula:
@@ -278,10 +278,10 @@ This is also done pair by pair across the array.
 
 ### 📝 Description:
 This Rust program allows a user to:
-1. Enter the size of an array.
-2. Input integer elements into the array.
-3. Calculate and print the **GCD (Greatest Common Divisor)** of all numbers in the array.
-4. Calculate and print the **LCM (Least Common Multiple)** of all numbers in the array.
+1. Enter the size of an vector.
+2. Input integer elements into the vector.
+3. Calculate and print the **GCD (Greatest Common Divisor)** of all numbers in the vector.
+4. Calculate and print the **LCM (Least Common Multiple)** of all numbers in the vector.
 
 
 
@@ -308,9 +308,9 @@ This Rust program allows a user to:
 
 
 ### 🖥️ How It Works:
-1. Program asks for array size.
+1. Program asks for vector size.
 2. User enters numbers one by one.
-3. GCD is computed across all array values using a loop and the brute force method.
+3. GCD is computed across all vector values using a loop and the brute force method.
 4. LCM is computed using the multiplication and division formula.
 5. Both results are displayed.
 
@@ -478,3 +478,34 @@ Input validation ensures marks are within the valid range.
 The program uses a loop to keep asking for valid marks until they are entered correctly.
 The grading scale is customizable within the grade function.
 
+
+---
+
+
+## 🔐 Password Validator – Rust Program
+
+This is a simple Rust program that checks if the user's entered password meets common security criteria.
+
+### ✅ Password Criteria
+
+The password must:
+
+Be at least 8 characters long
+Contain at least 1 uppercase letter
+Contain at least 1 numeric digit
+Contain at least 1 special character from `!@#$%^&*()``
+
+### 🧠 How It Works
+Prompts the user to enter a password.
+
+Checks:
+
+Password length (pass.len() < 8)
+At least one uppercase (ch.is_uppercase())
+At least one digit (ch.is_numeric())
+At least one special character (using contains() on a string of special characters)
+Displays appropriate messages:
+
+If the password is valid → ✅ success message
+
+If invalid → ❌ specific instructions on what’s missing
