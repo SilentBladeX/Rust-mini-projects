@@ -7,8 +7,8 @@ fn main() {
     io::stdin().read_line(&mut size).expect("Failed to read input");
 
     let size: usize = match size.trim().parse() {
-        Ok(n) if n > 0 => n,
-        _ => {
+        Ok(size)=>size,
+        Err(_) => {
             println!("Invalid size");
             return;
         }
