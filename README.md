@@ -586,3 +586,40 @@ add_items(): Adds items to the list.
 view_items(): Displays the current list of products.
 total_bill(): Calculates total cost.
 remove_item(): Deletes an item by name.
+
+
+---
+
+
+## Attendance Logger
+
+This is a simple command-line Attendance Logger program written in Rust.  
+It allows you to mark attendance for students, view all marked names with their attendance status, and see the total count of present and absent students.
+
+
+### Features
+
+- Mark attendance for multiple students by entering their name and attendance status (true for present, false for absent).
+- View the list of all students with their attendance status.
+- View the total number of present and absent students.
+- Exit the program anytime.
+
+
+### Important Notes
+
+- The program reads input from the user and expects valid input. If invalid input is given (non-integer where integer is expected, or non-boolean where boolean is expected), the program will print "Invalid number" and exit.
+- Attendance should be entered as `true` or `false` (without quotes).
+- The program flushes the output buffer before reading user input to ensure the menu displays immediately.
+
+
+
+### Code Explanation
+
+- Uses a vector `Vec<(String, bool)>` to store student names and their attendance.
+- Uses Rust's `std::io` to read user input.
+- The `mark_attendace` function reads student data and stores it.
+- The `mark_names` function prints all recorded student attendance.
+- The `t_p_a` function calculates and displays the total present and absent counts.
+- Proper error handling for input parsing is implemented.
+
+
