@@ -108,7 +108,7 @@ fn t_p_a(tup: &Vec<(String,bool)>) {
     let mut t_absent=0;
 
 
-    for (_,present) in tup.iter(){
+    for (_,present) in tup{
         if *present {
            t_present=t_present+1 ; 
         } 
