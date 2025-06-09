@@ -20,6 +20,7 @@ fn main(){
 
     if pass.len()<8{
         println!("Password must be 8 characters long");
+        return;
     }
 
     let mut _has_upper=false;
