@@ -540,3 +540,49 @@ total_expenses() : Calculates and displays the total amount spent
  
 All expense descriptions are stored as String for clarity and display
 Amounts are stored as f64 to allow decimal values
+
+
+
+---
+
+
+## 🛒 Grocery List Manager (Rust CLI Project)
+
+A simple command-line Rust application that allows users to manage a grocery list. Users can **add**, **view**, **remove items**, and **calculate the total bill** interactively from the terminal.
+
+
+
+### 📦 Features
+
+- ➕ Add multiple grocery items with name, quantity, and price.
+- 📋 View all added items in a clean tabular format.
+- 💰 Calculate and display the total bill based on quantity × price.
+- ❌ Remove items by name (case-insensitive).
+- 🚪 Exit the application smoothly.
+
+
+
+### Functionality
+
+Option 1: Enter how many items you want to add, and for each, input:
+
+Name (string)
+Quantity (integer)
+Price per item (floating point)
+
+Option 2: Shows all added grocery items in a formatted table.
+Option 3: Calculates and displays the total bill.
+Option 4: Removes an item by name. The name check is case-insensitive.
+Option 5: Exits the program.
+
+
+
+### 🛠️ Code Structure
+
+struct Grocerystore: Holds item details - name, quantity, price.
+
+main: Menu loop handling user choices.
+add_items(): Adds items to the list.
+view_items(): Displays the current list of products.
+total_bill(): Calculates total cost.
+remove_item(): Deletes an item by name.
