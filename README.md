@@ -623,3 +623,30 @@ It allows you to mark attendance for students, view all marked names with their 
 - Proper error handling for input parsing is implemented.
 
 
+---
+
+
+## 📒 Contact Book - Rust CLI App
+
+This is a simple command-line Contact Book application written in Rust. It allows users to manage their contacts by adding, viewing, updating, deleting, sorting, and searching them based on names or emails.
+
+### 🚀 Features
+
+✅ Add one or more contacts (Name, Phone, Email)
+🔁 Update an existing contact's phone and email
+👀 View all saved contacts
+❌ Delete a contact by name
+🔠 Sort contacts by name or email
+🔍 Search contacts using name or email
+🛑 Exit the program cleanly
+
+
+### 📚 Concepts Used
+
+struct and Vec<T>
+User input handling using io::stdin
+Loops (loop, for)
+String parsing and trimming
+Vector methods: push, remove, sort_by, iter, iter_mut, position
+Pattern matching with match
+Basic error handling
