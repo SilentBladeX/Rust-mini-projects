@@ -650,3 +650,44 @@ String parsing and trimming
 Vector methods: push, remove, sort_by, iter, iter_mut, position
 Pattern matching with match
 Basic error handling
+
+
+---
+
+
+
+## Word Extractor
+
+### Description:
+
+This is a simple Rust program that extracts the first, second, and third words from a given sentence using string slicing. It helps you understand how to work with &str, string slices, and bytes in Rust.
+
+### How It Works:
+
+The user defines a string like:
+let s = String::from("This is Ahad");
+
+The program uses three functions:
+
+first_word(&String) -> &str
+→ Returns the first word before the first space.
+
+secong_word(&String) -> &str
+→ Returns the second word (between first and second space).
+
+third_word(&String) -> &str
+→ Returns the third word (between second and third space).
+
+These functions:
+
+Convert the string to bytes using .as_bytes()
+Use .enumerate() to loop through characters
+Detect space characters (b' ')
+Return appropriate word slices from the original string
+If second or third word is not found, the program prints a warning.
+
+### Output
+
+First Word in String is This  
+Second Word in String is is  
+Third Word in String is Ahad  
