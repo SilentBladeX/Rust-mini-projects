@@ -734,3 +734,50 @@ It walks through the string byte by byte.
 It tracks word start positions and calculates word lengths.
 Whenever a shorter word is found, it updates the short variable.
 Finally, it returns the shortest word found using .unwrap_or("").
+
+
+---
+
+
+
+## Largest Word Finder - Rust Program
+
+### 📘 Description
+
+This Rust program reads a line of input from the user and finds the **largest word** (i.e., the word with the most characters) in the string.
+
+It demonstrates string handling in Rust using:
+- `std::io` for input
+- String trimming and slicing
+- Byte-level iteration with `.as_bytes()`
+- Borrowing with references (`&String`, `&str`)
+- Conditions and loops
+
+---
+
+### 🧠 How It Works
+
+### Step-by-step:
+
+1. **User Input**
+   - Prompts the user to enter a string
+   - Reads it with `io::stdin().read_line()`
+
+2. **Trimming Input**
+   - Removes any trailing newline or whitespace with `.trim()`
+   - Converts it back into a `String` using `.to_string()`
+
+3. **Finding the Largest Word**
+   - The function `largest_word()` scans the string byte-by-byte
+   - On every space (`b' '`), it checks the length of the current word
+   - Keeps track of the longest word found so far using:
+     - `start`: start index of current word
+     - `len`: length of current word
+     - `max_len`: longest length found
+     - `large`: stores a reference to the largest word
+
+4. **Handles the Last Word**
+   - After the loop, it checks if the last word (after the final space) is the largest
+
+5. **Prints the Result**
+   - Displays the largest word or an empty string if none is found
