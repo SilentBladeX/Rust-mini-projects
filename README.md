@@ -691,3 +691,46 @@ If second or third word is not found, the program prints a warning.
 First Word in String is This  
 Second Word in String is is  
 Third Word in String is Ahad  
+
+
+---
+
+
+## Shortest Word Finder
+
+### 📋 Description
+
+This is a simple Rust CLI program that:
+- Accepts a string from the user
+- Splits the string into words
+- Finds the **shortest word** among them
+- Displays the shortest word as output
+
+It uses basic Rust features like:
+- `std::io` for user input
+- `match` and `Option` for error handling
+- Slices (`&str`) and byte-level processing with `.as_bytes()`
+- Ownership and borrowing rules
+
+
+
+### 🛠️ How It Works
+
+### 1. Prompt User Input
+
+The program asks the user to enter a string using `println!` and reads the input using:
+```rust
+let mut str = String::new();
+io::stdin().read_line(&mut str)
+
+2. Parse and Trim Input
+The input is trimmed (to remove \n) and parsed. If parsing fails, it prints "Invalid string" and exits early using return.
+
+3.Find Shortest Word
+
+The core logic is inside the short_word() function:
+
+It walks through the string byte by byte.
+It tracks word start positions and calculates word lengths.
+Whenever a shorter word is found, it updates the short variable.
+Finally, it returns the shortest word found using .unwrap_or("").
