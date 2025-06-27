@@ -695,46 +695,40 @@ Third Word in String is Ahad
 
 ---
 
-
 ## Shortest Word Finder
 
-### 📋 Description
+### Description:
 
 This is a simple Rust CLI program that:
-- Accepts a string from the user
-- Splits the string into words
-- Finds the **shortest word** among them
-- Displays the shortest word as output
 
+Accepts a string from the user
+Splits the string into words
+Finds the shortest word among them
+Displays the shortest word as output
 It uses basic Rust features like:
-- `std::io` for user input
-- `match` and `Option` for error handling
-- Slices (`&str`) and byte-level processing with `.as_bytes()`
-- Ownership and borrowing rules
+std::io for user input
+match and Option for error handling
+Slices (&str) and byte-level processing with .as_bytes()
 
+### Ownership and borrowing rules
 
+How It Works:
 
-### 🛠️ How It Works
-
-### 1. Prompt User Input
-
-The program asks the user to enter a string using `println!` and reads the input using:
-```rust
+Prompt User Input:
+The program asks the user to enter a string using println! and reads the input using:
 let mut str = String::new();
 io::stdin().read_line(&mut str)
-```
 
-2. Parse and Trim Input
+Parse and Trim Input:
 The input is trimmed (to remove \n) and parsed. If parsing fails, it prints "Invalid string" and exits early using return.
 
-3.Find Shortest Word
+### Find Shortest Word:
 
-The core logic is inside the short_word() function:
-
+The core logic is inside the short_word() function.
 It walks through the string byte by byte.
 It tracks word start positions and calculates word lengths.
 Whenever a shorter word is found, it updates the short variable.
-Finally, it returns the shortest word found using .unwrap_or("").
+Finally, it returns the shortest word found using unwrap_or("").
 
 
 ---
@@ -743,79 +737,92 @@ Finally, it returns the shortest word found using .unwrap_or("").
 
 ## Largest Word Finder - Rust Program
 
-### 📘 Description
+### Description:
 
-This Rust program reads a line of input from the user and finds the **largest word** (i.e., the word with the most characters) in the string.
+This Rust program reads a line of input from the user and finds the largest word (i.e., the word with the most characters) in the string.
 
 It demonstrates string handling in Rust using:
-- `std::io` for input
-- String trimming and slicing
-- Byte-level iteration with `.as_bytes()`
-- Borrowing with references (`&String`, `&str`)
-- Conditions and loops
+
+std::io for input
+String trimming and slicing
+Byte-level iteration with .as_bytes()
+Borrowing with references (&String, &str)
+Conditions and loops
+
+### How It Works:
+
+Step-by-step:
+
+User Input:
+Prompts the user to enter a string.
+Reads it with io::stdin().read_line()
+
+Trimming Input:
+Removes any trailing newline or whitespace with .trim()
+Converts it back into a String using .to_string()
+
+Finding the Largest Word:
+The function largest_word() scans the string byte-by-byte.
+On every space (b' '), it checks the length of the current word.
+Keeps track of the longest word found so far using:
+
+start: start index of current word
+len: length of current word
+max_len: longest length found
+large: stores a reference to the largest word
+
+Handles the Last Word:
+After the loop, it checks if the last word (after the final space) is the largest.
+
+Prints the Result:
+Displays the largest word or an empty string if none is found.
+
 
 ---
 
-### 🧠 How It Works
-
-### Step-by-step:
-
-1. **User Input**
-   - Prompts the user to enter a string
-   - Reads it with `io::stdin().read_line()`
-
-2. **Trimming Input**
-   - Removes any trailing newline or whitespace with `.trim()`
-   - Converts it back into a `String` using `.to_string()`
-
-3. **Finding the Largest Word**
-   - The function `largest_word()` scans the string byte-by-byte
-   - On every space (`b' '`), it checks the length of the current word
-   - Keeps track of the longest word found so far using:
-     - `start`: start index of current word
-     - `len`: length of current word
-     - `max_len`: longest length found
-     - `large`: stores a reference to the largest word
-
-4. **Handles the Last Word**
-   - After the loop, it checks if the last word (after the final space) is the largest
-
-5. **Prints the Result**
-   - Displays the largest word or an empty string if none is found
 
 
-
----
-
-
-## String slicer (Rust Program)
-
-======================================
+## String Slicer - Rust Program
 
 ### Description:
-------------
-This is a Rust program that takes a sentence from the user
-and prints the first, second, and third words from it.
 
-### How it works:
--------------
-1. The program asks the user to input a string.
-2. It trims the input and extracts:
-   - The first word using a custom function.
-   - The second and third words using .split_whitespace() iterator.
+This is a Rust program that takes a sentence from the user and prints the first, second, and third words from it.
+
+How It Works:
+
+The program asks the user to input a string.
+It trims the input and extracts:
+The first word using a custom function.
+The second and third words using .split_whitespace() iterator.
 
 ### Example:
---------
-Input:
-  Hello Rust programming world
 
-### Output:
-  First word in String are Hello
-  Second word in String are Rust
-  Third word in String is programming
+Input:
+Hello Rust programming world
+
+Output:
+First word in String are Hello
+Second word in String are Rust
+Third word in String is programming
 
 ### Notes:
-------
-- If fewer than three words are given, missing words will be blank.
-- Extra spaces between words are ignored.
+
+If fewer than three words are given, missing words will be blank.
+Extra spaces between words are ignored.
+Let me know if you want it in .md again but with limited formatting or if you want a downloadable .txt version.
+
+
+
+
+
+
+
+
+
+
+
+
+Tools
+
+
 
