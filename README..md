@@ -722,6 +722,7 @@ The program asks the user to enter a string using `println!` and reads the input
 ```rust
 let mut str = String::new();
 io::stdin().read_line(&mut str)
+```
 
 2. Parse and Trim Input
 The input is trimmed (to remove \n) and parsed. If parsing fails, it prints "Invalid string" and exits early using return.
@@ -781,3 +782,40 @@ It demonstrates string handling in Rust using:
 
 5. **Prints the Result**
    - Displays the largest word or an empty string if none is found
+
+
+
+---
+
+
+## String slicer (Rust Program)
+
+======================================
+
+### Description:
+------------
+This is a Rust program that takes a sentence from the user
+and prints the first, second, and third words from it.
+
+### How it works:
+-------------
+1. The program asks the user to input a string.
+2. It trims the input and extracts:
+   - The first word using a custom function.
+   - The second and third words using .split_whitespace() iterator.
+
+### Example:
+--------
+Input:
+  Hello Rust programming world
+
+### Output:
+  First word in String are Hello
+  Second word in String are Rust
+  Third word in String is programming
+
+### Notes:
+------
+- If fewer than three words are given, missing words will be blank.
+- Extra spaces between words are ignored.
+
