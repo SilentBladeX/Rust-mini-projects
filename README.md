@@ -811,9 +811,6 @@ If fewer than three words are given, missing words will be blank.
 Extra spaces between words are ignored.
 Let me know if you want it in .md again but with limited formatting or if you want a downloadable .txt version.
 
-<<<<<<< HEAD
-=======
-
 
 
 
