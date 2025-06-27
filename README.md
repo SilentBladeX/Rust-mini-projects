@@ -810,3 +810,53 @@ Third word in String is programming
 If fewer than three words are given, missing words will be blank.
 Extra spaces between words are ignored.
 Let me know if you want it in .md again but with limited formatting or if you want a downloadable .txt version.
+
+
+
+---
+
+
+
+## Word Length Finder - Rust Program
+
+### Description:
+
+This is a simple Rust CLI program that takes a sentence as input and finds:
+
+The smallest word (shortest in length)
+The largest word (longest in length)
+
+### It uses:
+
+std::io for user input
+String trimming
+.split_whitespace() to separate words
+.len() to compare word lengths
+
+### How It Works:
+
+Prompts the user to input a string.
+Trims the input to remove extra spaces or newlines.
+Passes the string to two functions:
+small_word() to find the shortest word.
+largest_word() to find the longest word.
+Prints both words.
+
+### Example Input:
+
+css
+Copy
+Edit
+Enter a String  
+hello from rust programming world
+
+### Example Output:
+
+csharp
+Copy
+Edit
+Smallest word in string are: from  
+Smallest word in string are: programming
+
+### Note:
+If multiple words have the same smallest/largest length, it returns the first one found.
