@@ -810,19 +810,3 @@ Third word in String is programming
 If fewer than three words are given, missing words will be blank.
 Extra spaces between words are ignored.
 Let me know if you want it in .md again but with limited formatting or if you want a downloadable .txt version.
-
-
-
-
-
-
-
-
-
-
-
-Tools
-
-
-
->>>>>>> 938dbc260dd54ff697f231133848eac9fe762657
