@@ -933,3 +933,45 @@ Returns the shortest word from the input string.
 
 long_word(str: &str) -> &str
 Returns the longest word from the input string.
+
+
+---
+
+
+## Unique Word Finder in Rust
+
+This Rust program takes a user-input string, splits it into words, and finds the first unique word (a word that occurs only once). It uses ownership and borrowing concepts safely with iterators and a vector of string slices.
+
+### 📌 Features
+
+- Accepts input from the user
+- Splits the input into individual words
+- Identifies and returns the **first non-repeating word**
+
+### 🧠 How it Works
+
+- The input is trimmed and split using `split_whitespace()`, and collected into a `Vec<&str>`.
+- Two nested loops iterate over the words to count occurrences.
+- The first word with exactly one occurrence is returned as `Some(String)`.
+- If no unique word is found, the function returns `None`.
+
+### 🔁 Example Input/Output
+
+Enter a string
+apple ball apple dog ball
+
+Output:
+Some("dog")
+
+### 🛠 Concepts Used
+
+- Ownership & Borrowing
+- Vectors (`Vec<&str>`)
+- Iterators
+- String slicing
+- Option types (`Some`, `None`)
+
+### 📝 Note
+No external crates are used. This is a beginner-friendly example focusing on ownership and references in Rust.
+
+
