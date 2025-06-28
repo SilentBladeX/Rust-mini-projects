@@ -1049,3 +1049,36 @@ Most frequently word is "rust"
 - Words are split using `.split_whitespace()`
 - Two loops compare each word with others
 - The word with the highest count is returned
+
+
+---
+
+
+## Second Most Frequent Word
+
+This Rust program reads a string input from the user, splits it into words, and then finds the second most frequently occurring word in the input.
+
+### 📋 Problem Statement
+
+Given a string of space-separated words, find the second most frequently occurring word. If:
+- there is only one unique word, or
+- all words occur with the same frequency,
+
+then output:
+No second most frequent word
+
+### 📥 Input Example
+
+apple banana apple orange banana apple
+
+### 📤 Output Example
+
+banana
+
+
+### 🧠 Logic Overview
+
+- Split the string into words.
+- Count frequency of each unique word (no duplicates).
+- Sort the words by frequency in descending order.
+- Return the second most frequent word if it exists.
