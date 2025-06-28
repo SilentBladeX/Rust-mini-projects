@@ -1021,3 +1021,31 @@ This is a great beginner-friendly program for:
 ---
 
 
+## Most Frequent Word Finder in Rust
+
+### Description:
+
+This Rust program reads a string input from the user, splits it into individual words, and finds the word that appears most frequently. It uses nested loops to manually compare each word with all others.
+
+### Features:
+
+- Uses manual logic (no HashMap)
+- Demonstrates ownership and borrowing with String and &str
+- Practices loop-based comparison to build logic
+- Avoids using advanced collections
+
+### Example:
+
+### Input:
+
+hello world hello rust rust rust
+
+### Output:
+
+Most frequently word is "rust"
+
+
+### Logic:
+- Words are split using `.split_whitespace()`
+- Two loops compare each word with others
+- The word with the highest count is returned
