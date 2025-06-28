@@ -889,3 +889,47 @@ The second word in String is is
 The third word in String is blazing
 The last word in String is fast
 nth word is blazing
+
+
+---
+
+
+## 🔍 Word Length Analyzer in Rust
+
+This Rust CLI program reads a sentence from the user and identifies:
+- The **shortest word**
+- The **longest word**
+
+---
+
+### 🚀 How to Run
+
+1. Save the code into a file called `word_length_analyzer.rs`
+2. Compile and run it using:
+
+
+### 📂 Example Output
+
+
+Enter a string
+Rust is a blazing fast language
+Shortest word in String are : a
+Longest word in String are : language
+
+### 🧠 Logic Overview
+The program uses .split_whitespace() to iterate over all words in the string.
+
+It keeps track of:
+
+min_len and short for the shortest word
+max_len and long for the longest word
+Efficient and clean use of usize::MAX and usize::MIN as initial boundaries.
+
+
+### 📄 Functions
+
+small_word(str: &str) -> &str
+Returns the shortest word from the input string.
+
+long_word(str: &str) -> &str
+Returns the longest word from the input string.
