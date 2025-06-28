@@ -860,3 +860,32 @@ Smallest word in string are: programming
 
 ### Note:
 If multiple words have the same smallest/largest length, it returns the first one found.
+
+
+---
+
+
+## 📝 Nth Word Finder in Rust
+
+This simple Rust CLI program allows the user to input a sentence and then:
+- Extracts the **first**, **second**, and **third** words
+- Extracts the **last** word
+- Extracts the **nth** word (using 0-based index)
+
+
+
+### 🚀 How to Run
+
+1. Save the code in a file called `nth_word_finder.rs`
+2. Compile and run it using Cargo or `rustc`:
+
+
+### 📂 Example Output
+
+Enter a String
+Rust is blazing fast
+The first word in String is Rust
+The second word in String is is
+The third word in String is blazing
+The last word in String is fast
+nth word is blazing
