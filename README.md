@@ -975,3 +975,49 @@ Some("dog")
 No external crates are used. This is a beginner-friendly example focusing on ownership and references in Rust.
 
 
+
+---
+
+
+
+## Remove Duplicate Words from a String in Rust
+
+This Rust program removes duplicate words from a string input provided by the user.
+
+### 💡 How It Works
+
+- The program reads a line of input from the user.
+- It trims and splits the string into words using `.split_whitespace()`.
+- It then iterates through each word.
+- It checks if the word is already in a result vector.
+  - If not, it adds it to the result vector.
+  - If it's already present, it's skipped.
+- Finally, the result vector is printed, which contains only unique (non-repeating) words in the order they first appeared.
+
+### 📦 Example
+
+**Input:**
+apple ball apple dog ball
+
+**Output:**
+["apple", "ball", "dog"]
+
+
+### 🔧 Key Concepts Used
+
+- Ownership and borrowing: input is owned and borrowed properly where needed.
+- `Vec<String>` is used to store unique words.
+- `word.to_string()` is used to convert `&str` to owned `String`.
+- `.contains()` is used to check for duplicates (internally uses `==` comparison).
+
+### 🧠 Learning Benefit
+
+This is a great beginner-friendly program for:
+- Practicing string handling in Rust
+- Understanding ownership and borrowing
+- Working with vectors and the `.contains()` method
+- Building logic to remove duplicates without using `HashSet` or other advanced tools
+
+---
+
+
